@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact us</title>
+<style>
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+    }
+    
+    .contact_form{
+        width: 300px;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        background-color: #f9f9f9;
+    }
+    
+    input[type="text"],
+    input[type="email"],
+    input[type="submit"] {
+        width: 100%;
+        padding: 10px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+    
+    input[type="submit"] {
+        background-color: #4CAF50;
+        color: white;
+        cursor: pointer;
+    }
+</style>
+</head>
+<body>
+
+<div class="contact_form">
+    <h2>Contact us</h2>
+    <form action="/submit_contact_form" method="post">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required></br>
+
+        <label for="name">Email</label>
+        <input type="email" id="email" name="email" required></br>
+
+     <label for="message">Message</label>
+        <textarea id="message"
+      name="message" required></textarea></br>
+      <input type="submit"
+      value="submit">
+    </form>
+</div>
+
+</body>
+</html>
